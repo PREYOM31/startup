@@ -1,0 +1,104 @@
+/* stylecheckingdoc.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #03c8ff;
+  color: #ecf0f2;
+}
+
+.top-bar {
+  text-align: center;
+  padding: 2rem 1rem 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.brand-name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-top: 0.5rem;
+}
+
+.booking-section {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.booking-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #34495e;
+}
+
+.tab-bar {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  padding: 0.5rem 1.5rem;
+  background-color: #ecf0f1;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.tab.active {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.doctor-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.doctor-card {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 16px;
+  width: 200px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.doctor-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.doctor-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.doctor-card p {
+  margin: 0;
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 768px) {
+  .doctor-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
