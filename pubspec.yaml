@@ -1,0 +1,59 @@
+name: metecogy
+description: "A Flutter medical emergency and doctor booking app"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Firebase
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.3
+  cloud_firestore: ^5.4.6
+  firebase_messaging: ^15.1.6
+  
+  # State Management
+  flutter_riverpod: ^2.6.1
+  
+  # Location & Maps
+  geolocator: ^13.0.2
+  google_maps_flutter: ^2.9.0
+  geocoding: ^3.0.0
+  
+  # UI & Navigation
+  go_router: ^14.6.2
+  flutter_screenutil: ^5.9.3
+  
+  # Utilities
+  intl: ^0.19.0
+  uuid: ^4.5.1
+  
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+    
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
